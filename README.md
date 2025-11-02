@@ -69,19 +69,19 @@ you can preview the input/output file.
 
 ▶️ Run CLI(in -video-unjumbler folder)
 ```bash
- python src/Unjumbler.py --input input/<File name>.mp4 --output output/<File name>.mp4
+ python src/Unjumbler.py --input <File name>.mp4 --output <File name>.mp4
 ```
 Example:
 ```bash
- python src/Unjumbler.py --input input/jumbled_video.mp4 --output output/result.mp4
+ python src/Unjumbler.py --input jumbled_video.mp4 --output result.mp4
 ```
 ▶️ Run GUI
 ```bash
-python src/Unjumbler_gui.py --gui --input input/<File name>.mp4 --output output/<File name>.mp4
+python src/Unjumbler_gui.py --gui --input <File name>.mp4 --output <File name>.mp4
 ```
 Example:
 ```bash
-python src/Unjumbler_gui.py --gui --input input/jumbled_video.mp4 --output output/result.mp4
+python src/Unjumbler_gui.py --gui --input jumbled_video.mp4 --output result.mp4
 ```
 Optional flags
 Flag	Description
