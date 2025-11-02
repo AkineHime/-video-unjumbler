@@ -29,6 +29,7 @@ If clip is missing, install CLIP:
 ```bash
 pip install git+https://github.com/openai/CLIP.git
 ```
+```
 📁 Project Structure
 bash
 Copy code
@@ -40,7 +41,7 @@ video-unjumbler/
 │   └─ requirements.txt
 │
 └─ README.md
-
+```
 CLI:
 Put the video to be Unjumnled in the src folder
 and name it jumbled.mp4(anthing you want) 
