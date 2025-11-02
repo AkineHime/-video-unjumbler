@@ -98,15 +98,15 @@ Not Applicable for GUI:
 --no-clip
 
 ⚙️ How It Works
-Extract video frames using OpenCV
+=>Extract video frames using OpenCV
 
-Generate embeddings using OpenCLIP
+=>Generate embeddings using OpenCLIP
 
-Compute similarity between frames
+=>Compute similarity between frames
 
-Determine best ordering
+=>Determine best ordering
 
-Rebuild video from reordered frames
+=>Rebuild video from reordered frames
 
 📚 Installation Notes
 To avoid error:
