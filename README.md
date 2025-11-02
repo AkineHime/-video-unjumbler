@@ -29,10 +29,8 @@ If clip is missing, install CLIP:
 ```bash
 pip install git+https://github.com/openai/CLIP.git
 ```
-```
 📁 Project Structure
-bash
-Copy code
+```bash
 video-unjumbler/
 │
 ├─ src/
