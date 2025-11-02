@@ -14,6 +14,15 @@ It extracts frames, embeds them, calculates similarity, and rebuilds a more logi
 - ✅ CLI support  
 
 ---
+Installation:
+```
+git clone https://github.com/AkineHime/-video-unjumbler.git
+```
+Then enter the project:
+```
+bash
+cd -video-unjumbler
+```
 
 ## 📦 Requirements
 
