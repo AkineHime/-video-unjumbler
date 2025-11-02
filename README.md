@@ -23,8 +23,8 @@ Python **3.10+** recommended.
 ### Install dependencies
 ```bash
 pip install -r requirements.txt
-If clip is missing, install OpenCLIP:
 ```
+If clip is missing, install OpenCLIP:
 ```bash
 pip install open_clip_torch
 ```
