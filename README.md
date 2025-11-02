@@ -24,11 +24,7 @@ Python **3.10+** recommended.
 ```bash
 pip install -r requirements.txt
 ```
-If clip is missing, install OpenCLIP:
-```bash
-pip install open_clip_torch
-```
-Or install original OpenAI CLIP:
+If clip is missing, install CLIP:
 ```bash
 pip install git+https://github.com/openai/CLIP.git
 ```
