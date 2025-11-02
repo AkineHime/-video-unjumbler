@@ -24,15 +24,14 @@ Python **3.10+** recommended.
 ```bash
 pip install -r requirements.txt
 If clip is missing, install OpenCLIP:
-
-bash
-Copy code
+```
+```bash
 pip install open_clip_torch
+```
 Or install original OpenAI CLIP:
-
-bash
-Copy code
+```bash
 pip install git+https://github.com/openai/CLIP.git
+```
 📁 Project Structure
 bash
 Copy code
@@ -50,9 +49,9 @@ video-unjumbler/
 ├─ requirements.txt
 └─ README.md
 ▶️ Run
-bash
-Copy code
+```bash
 python src/Unjumbler.py --input jumbled.mp4 --output result.mp4
+```
 Optional flags
 Flag	Description
 --input	Input video file
@@ -62,9 +61,9 @@ Flag	Description
 
 Example:
 
-bash
-Copy code
+```bash
 python src/Unjumbler.py --input jumbled.mp4 --output restored.mp4 --save-frames
+```
 ⚙️ How It Works
 Extract video frames using OpenCV
 
@@ -79,44 +78,43 @@ Rebuild video from reordered frames
 📚 Installation Notes
 To avoid error:
 
-vbnet
-Copy code
+```vbnet
 ModuleNotFoundError: No module named 'clip'
+```
 Install OpenCLIP:
-
-bash
-Copy code
+```bash
 pip install open_clip_torch
+
+```
 Or install OpenAI CLIP:
 
-bash
-Copy code
+```bash
 pip install git+https://github.com/openai/CLIP.git
+```
 To be safe, install into the same Python interpreter running your script:
 
-bash
-Copy code
+```bash
 "<path_to_python.exe>" -m pip install open_clip_torch
+```
 ❗ Troubleshooting
 ❌ ModuleNotFoundError: No module named 'clip'
 ✅ Install OpenCLIP:
 
----bash
+```bash
 pip install open_clip_torch
----
+```
 ✅ Or install OpenAI CLIP:
-bash
-Copy code
+```bash
 pip install git+https://github.com/openai/CLIP.git
+```
 ❌ Wrong environment
 Check Python being used:
 
-bash
-Copy code
+```bash
 where python
 where pip
+```
 Install properly:
-
-bash
-Copy code
+```bash
 python -m pip install open_clip_torch
+```
