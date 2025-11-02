@@ -23,6 +23,7 @@ Python **3.10+** recommended.
 ### Install dependencies
 ```bash
 pip install -r requirements.txt
+pip install git+https://github.com/openai/CLIP.git
 ```
 If clip is missing, install CLIP:
 ```bash
@@ -34,17 +35,22 @@ Copy code
 video-unjumbler/
 │
 ├─ src/
-│   ├─ Unjumbler.py         # Main script
-│   ├─ utils.py             # Helpers
-│   └─ ...
+│   ├─ Unjumbler.py         # CLI
+│   ├─ Unjumbler_gui.py     # GUI version 
+│   └─ requirements.txt
 │
-├─ output/
-│   ├─ frames/              # Extracted frames
-│   └─ result.mp4           # Reordered video
-│
-├─ requirements.txt
 └─ README.md
-▶️ Run
+
+CLI:
+Put the video to be Unjumnled in the src folder
+and name it jumbled.mp4(anthing you want) 
+
+GUI:
+Open the python file and select the input file.
+give the output file name.
+you can preview the input/output file.
+
+▶️ Run CLI
 ```bash
 python src/Unjumbler.py --input jumbled.mp4 --output result.mp4
 ```
@@ -54,11 +60,13 @@ Flag	Description
 --output	Output restored video
 --save-frames	Save extracted frames
 --no-clip	Run without CLIP
+--reverse to reverse the output(no argument)
+--fps FPS to define fps(auto detected)
 
 Example:
 
 ```bash
-python src/Unjumbler.py --input jumbled.mp4 --output restored.mp4 --save-frames
+python src/Unjumbler.py --input jumbled.mp4 --output restored.mp4 --save-frames --reverse --fps 30 --no-clip
 ```
 ⚙️ How It Works
 Extract video frames using OpenCV
