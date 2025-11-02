@@ -45,13 +45,34 @@ Put the video to be Unjumnled in the src folder
 and name it jumbled.mp4(anthing you want) 
 
 GUI:
+for gui install PySide6
+```
+bash
+python -m pip install PySide6
+```
+if you are in a virtual enviornment
+```bash
+.\.venv\Scripts\python -m pip install PySide6
+```
 Open the python file and select the input file.
 give the output file name.
 you can preview the input/output file.
 
-▶️ Run CLI
+▶️ Run CLI(in -video-unjumbler folder)
 ```bash
-python src/Unjumbler.py --input jumbled.mp4 --output result.mp4
+ python src/Unjumbler.py --input input/<File name>.mp4 --output output/<File name>.mp4
+```
+Example:
+```bash
+ python src/Unjumbler.py --input input/jumbled_video.mp4 --output output/result.mp4
+```
+▶️ Run GUI
+```bash
+python src/Unjumbler_gui.py --gui --input input/<File name>.mp4 --output output/<File name>.mp4
+```
+Example:
+```bash
+python src/Unjumbler_gui.py --gui --input input/jumbled_video.mp4 --output output/result.mp4
 ```
 Optional flags
 Flag	Description
@@ -63,10 +84,19 @@ Flag	Description
 --fps FPS to define fps(auto detected)
 
 Example:
-
+CLI:
 ```bash
-python src/Unjumbler.py --input jumbled.mp4 --output restored.mp4 --save-frames --reverse --fps 30 --no-clip
+python src/Unjumbler.py --input <File name>.mp4 --output <File name>.mp4 --save-frames --reverse --fps 30 --no-clip
 ```
+GUI:
+```bash
+python src/Unjumbler_gui.py --gui --input <File name>.mp4 --output <File name>.mp4 
+```
+Not Applicable for GUI:
+--save-frames
+--reverse --fps 30
+--no-clip
+
 ⚙️ How It Works
 Extract video frames using OpenCV
 
@@ -81,43 +111,10 @@ Rebuild video from reordered frames
 📚 Installation Notes
 To avoid error:
 
-```vbnet
-ModuleNotFoundError: No module named 'clip'
-```
-Install OpenCLIP:
-```bash
-pip install open_clip_torch
-
-```
-Or install OpenAI CLIP:
-
-```bash
-pip install git+https://github.com/openai/CLIP.git
-```
-To be safe, install into the same Python interpreter running your script:
-
-```bash
-"<path_to_python.exe>" -m pip install open_clip_torch
-```
-❗ Troubleshooting
-❌ ModuleNotFoundError: No module named 'clip'
-✅ Install OpenCLIP:
-
-```bash
-pip install open_clip_torch
-```
-✅ Or install OpenAI CLIP:
-```bash
-pip install git+https://github.com/openai/CLIP.git
-```
 ❌ Wrong environment
 Check Python being used:
 
 ```bash
 where python
 where pip
-```
-Install properly:
-```bash
-python -m pip install open_clip_torch
 ```
